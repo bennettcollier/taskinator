@@ -311,7 +311,16 @@ var saveTasks = function() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
+var loadTasks = function() {
+    localStorage.setItem("tasks", JSON.stringify(tasks));   
+    if tasks = JSON.parse(tasks);
+    for (i < tasks.taskIdCounter); 
+}
 
+var listItemEl = {
+    setAttribute("data-task-id", tasks[i].id);
+    setAttribute("draggable", true);
+}
 
 pageContentEL.addEventListener("click", taskButtonHandler);
 
